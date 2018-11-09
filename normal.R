@@ -11,5 +11,5 @@ filteredDescr1 <- test[, -nzv]
 procValues <- preProcess(filteredDescr, method = c("center", "scale"))
 scaledTraindata <-  predict(procValues, filteredDescr)
 scaledTestdata <-  predict(procValues, filteredDescr1)
-write.csv(scaledTraindata,file= "tt")
-write.csv(scaledTestdata,file="ttt")
+write.csv(scaledTraindata,file= "train_normal")
+write.csv(scaledTestdata,file="test_normal")
